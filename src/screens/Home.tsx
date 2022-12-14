@@ -40,10 +40,6 @@ interface BookInterface {
   cover: string;
 }
 function Home() {
-  const REST_API_KEY = "88a8cce423726da487e993a5fe33f7d6";
-  const NAVER_API_KEY = "0Iw92rTA7XwWVzbjiVmE";
-  const NAVER_SECRET_KEY = "2cLRnq5BXa";
-
   //카카오 API
   // fetch("https://dapi.kakao.com/v3/search/book?target=title&query=가", {
   //   headers: {
@@ -72,7 +68,7 @@ function Home() {
   useEffect(() => {
     (async () => {
       const response = await fetch(
-        "/ttb/api/ItemList.aspx?ttbkey=ttbpjunyup12155001&QueryType=Bestseller&MaxResults=10&start=1&SearchTarget=Book&output=js&Version=20131101"
+        "/ttb/api/ItemList.aspx?ttbkey=&QueryType=Bestseller&MaxResults=10&start=1&SearchTarget=Book&output=js&Version=20131101"
       );
       const json = await response.json();
       setBooks(json.item);
