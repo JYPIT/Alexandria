@@ -56,8 +56,8 @@ function Home() {
   // fetch("/v1/search/book.json?query=미움&display=10&start=1", {
   //   method: "GET",
   //   headers: {
-  //     "X-Naver-Client-Id": "0Iw92rTA7XwWVzbjiVmE",
-  //     "X-Naver-Client-Secret": "2cLRnq5BXa",
+  //     "X-Naver-Client-Id": "",
+  //     "X-Naver-Client-Secret": "",
   //   },
   // })
   // .then((res) => res.json())
